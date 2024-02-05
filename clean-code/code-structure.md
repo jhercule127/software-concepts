@@ -8,7 +8,8 @@
 
 - **Misleading Comments:** Avoid comments that are misleading or no longer accurate.
 
-- **Commented-Out Code:** Remove commented-out code rather than leaving it in the codebase. It can clutter the code and make it harder to maintain. [Example](https://github.com/academind/clean-code-course-code/blob/comments-formatting-01-bad-comments/bad-comments.ts).
+- **Commented-Out Code:** Remove commented-out code rather than leaving it in the codebase. It can clutter the code and make it harder to maintain. 
+[Example](https://github.com/academind/clean-code-course-code/blob/comments-formatting-01-bad-comments/bad-comments.ts).
 
 ## Good Comments
 
@@ -18,11 +19,18 @@
 
 - **Warnings and Todo Notes:** Use comments to highlight warnings or indicate areas for future improvement (e.g., TODO notes).
 
-- **Documentation Comments:** Depending on the project, include documentation comments to provide information about functions, classes, and other elements in the code. [Example](https://github.com/academind/clean-code-course-code/blob/comments-formatting-02-good-comments/02-good-comments.ts).
+- **Documentation Comments:** Depending on the project, include documentation comments to provide information about functions, classes, and other elements in the code. 
+[Example](https://github.com/academind/clean-code-course-code/blob/comments-formatting-02-good-comments/02-good-comments.ts).
 
 ## Code Formatting
 
 Code formatting improves readability and conveys meaning effectively.
+
+Vertical Formatting - space between lines and grouping of code
+Horizontal formatting - indentation, space between code, line width.
+
+
+Formatting rules differ between languages, also follow language specific conventions and guidelines.
 
 ### Vertical Formatting
 
@@ -37,6 +45,4 @@ Code formatting improves readability and conveys meaning effectively.
 - **Readable Without Scrolling:** Lines of code should be readable without horizontal scrolling. Use indentation and break long statements into shorter ones.
 
 - **Clear but Not Unreadable Long Names:** Use clear and descriptive names, even if they are long, to improve code readability.
-
-- **Follow Language-Specific Conventions:** Formatting rules may differ between languages. Follow language-specific conventions and guidelines to ensure consistency and readability.
 
