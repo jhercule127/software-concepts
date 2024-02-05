@@ -50,13 +50,13 @@ Well-named things allow readers to understand your code without going through it
 
 Certainly, here's the markdown file with the provided notes about classes, exceptions to be aware of, common errors, and pitfalls:
 
-# Classes
+## Classes
 
-## Describe the Object and Provide More Details Without Introducing Redundancy
+Describe the Object and Provide More Details Without Introducing Redundancy
 
 Classes define blueprints for creating objects. They encapsulate data for the object's properties and define methods to operate on those properties. Provide descriptive names that convey the purpose and functionality of the class without redundancy.
 
-## Exceptions to Be Aware Of
+### Exceptions to Be Aware Of
 
 - Libraries may have methods and objects with predefined names that cannot be changed. Refer to specific library documentation to understand and adhere to naming conventions within that context. [Example](https://github.com/academind/clean-code-course-code/blob/naming-02-naming-exceptions/naming-exceptions.py).
 
