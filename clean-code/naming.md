@@ -50,7 +50,6 @@ Well-named things allow readers to understand your code without going through it
 
 Certainly, here's the markdown file with the provided notes about classes, exceptions to be aware of, common errors, and pitfalls:
 
-```markdown
 # Classes
 
 ## Describe the Object and Provide More Details Without Introducing Redundancy
@@ -75,6 +74,3 @@ Classes define blueprints for creating objects. They encapsulate data for the ob
 
 - Explore clean naming examples in Python code [here](https://github.com/academind/clean-code-course-code/blob/naming-03-demo/03-clean-name-examples.py).
 - Additional examples and guidelines can be found in the [naming slides](https://github.com/academind/clean-code-course-code/blob/naming-extra-attachments/slides-naming.pdf).
-```
-
-You can also copy this markdown content into a `.md` file and use it as a reference on GitHub.
