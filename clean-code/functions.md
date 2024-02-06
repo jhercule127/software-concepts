@@ -57,7 +57,8 @@ For more information, refer to this [article](https://medium.com/thinkster-io/co
   ```
   The function `emailIsValid` operates at the same level of abstraction as its name suggests, providing a clear and concise indication of its purpose.
 
-- **Avoid Mixing Levels of Abstraction:** Keep functions focused and avoid mixing different levels of abstraction within a single function to maintain clarity and readability.
+> [!TIP]
+> **Avoid Mixing Levels of Abstraction:** Keep functions focused and avoid mixing different levels of abstraction within a single function to maintain clarity and readability.
 
 
 ---
@@ -68,6 +69,9 @@ For more information, refer to this [article](https://medium.com/thinkster-io/co
 1. **Extract Code That Works on the Same Functionality:** Split long functions by extracting code that performs a specific functionality.
 2. **Extract Code That Requires More Interpretation Than the Surrounding Code:** Split long functions by extracting code that requires more interpretation or explanation than the surrounding code.
 
+Bad Long Code: https://github.com/academind/clean-code-course-code/blob/functions-07-small-do-one-thing/bad-function.js
+Better Looking Code: https://github.com/academind/clean-code-course-code/blob/functions-07-small-do-one-thing/good-function.js
+
 ## Staying DRY (Don't Repeat Yourself)
 
 - **Don't Repeat Yourself (DRY):** Avoid writing the same code more than once. [Example](https://github.com/academind/clean-code-course-code/blob/functions-09-dry/dry.js#L10-L28).
@@ -77,13 +81,16 @@ For more information, refer to this [article](https://medium.com/thinkster-io/co
 ### Situations to Avoid When Being Too Granular:
 1. Renaming function.
 2. Finding a new function will take longer.
-3. Hard to find a new name.
+3. Hard to find a new name for it.
 
 ## Try Keeping Functions Pure
 
 - **Pure Functions:** Functions should ideally be pure, meaning they produce the same outputs for the same inputs and have no side effects. Pure functions are predictable, making them suitable for functional programming paradigms.
 
-### Side Effects:
+> [!NOTE]
+> It's not bad to have impure functions, but impure ones are not predictable. Pure ones don't have side effects
+
+### What are Side Effects?
 
 - **Definition:** A side effect is an operation that changes the overall system/program state.
 
@@ -97,5 +104,5 @@ For more information, refer to this [article](https://medium.com/thinkster-io/co
   ```
   `startSession` is a side effect as it may change something in the `user` object.
 
-- **Avoiding Side Effects:**
-  - Use meaningful names to indicate when side effects are expected to help avoid unexpected behavior.
+> [!TIP]
+> **Avoiding Side Effects:** Use meaningful names to indicate when side effects are expected to help avoid unexpected behavior.
