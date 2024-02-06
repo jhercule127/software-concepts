@@ -35,11 +35,9 @@ From lines 21 to 34 we use a function without parameters to make it more easier
 
 ---
 
-## Output Parameters
+## Output Parameters: Try to Avoid Them
 
-## Try to Avoid Them
-
-Output parameters are parameters passed into a function or method call that are modified during the function. It's recommended to avoid them.
+Output parameters are parameters passed into a function or method call that are modified during the function. **It's recommended to avoid them.**
 
 Functions should either return a value or modify "this". No other mutations should be allowed. In true functional programming, only returning values is preferred. 
 
@@ -61,5 +59,3 @@ For more information, refer to this [article](https://medium.com/thinkster-io/co
 
 - **Avoid Mixing Levels of Abstraction:** Keep functions focused and avoid mixing different levels of abstraction within a single function to maintain clarity and readability.
 ```
-
-You can copy this markdown content into a `.md` file and use it as a reference on GitHub.
