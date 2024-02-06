@@ -70,12 +70,15 @@ For more information, refer to this [article](https://medium.com/thinkster-io/co
 2. **Extract Code That Requires More Interpretation Than the Surrounding Code:** Split long functions by extracting code that requires more interpretation or explanation than the surrounding code.
 
 Bad Long Code: https://github.com/academind/clean-code-course-code/blob/functions-07-small-do-one-thing/bad-function.js
+
 Better Looking Code: https://github.com/academind/clean-code-course-code/blob/functions-07-small-do-one-thing/good-function.js
 
 ## Staying DRY (Don't Repeat Yourself)
 
 - **Don't Repeat Yourself (DRY):** Avoid writing the same code more than once. [Example](https://github.com/academind/clean-code-course-code/blob/functions-09-dry/dry.js#L10-L28).
   
+[Article to Read](https://scientificallysound.org/2018/07/19/python-functions/)
+
 - **Use Common Sense:** While following the DRY principle, always use common sense to determine the appropriate level of granularity. Being overly granular may not always improve readability.
 
 ### Situations to Avoid When Being Too Granular:
@@ -104,5 +107,23 @@ Better Looking Code: https://github.com/academind/clean-code-course-code/blob/fu
   ```
   `startSession` is a side effect as it may change something in the `user` object.
 
+  Another example: https://github.com/academind/clean-code-course-code/blob/functions-11-side-effects/pure-and-side-effects.js#L13-L17
+
+
 > [!TIP]
 > **Avoiding Side Effects:** Use meaningful names to indicate when side effects are expected to help avoid unexpected behavior.
+
+So naming matters in avoiding side effects. Names should indicate when a side effect is expected.
+
+> [!TIP]
+> Choose function name that implies it or move it to another function/place
+
+
+## Lastly, Unit Testing
+It can help with writing good clean code.
+
+One way to know if you need to split, can you easily test a function?
+1. No -> consider splitting it
+2. Yes - Good
+
+[Summarization of notes](https://github.com/academind/clean-code-course-code/blob/functions-extra-attachments/Functions-Summary.pdf)
