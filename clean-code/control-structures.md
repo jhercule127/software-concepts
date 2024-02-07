@@ -33,7 +33,8 @@ The guard fails fast, improving code clarity and efficiency. Look for opportunit
 
 - **Positive Phrasing:** Use positive phrasing, such as `isEmpty` instead of `isNotEmpty`, for improved readability and clarity.
 
-For inverting conditional logic, refer to this [example](https://github.com/academind/clean-code-course-code/tree/control-06-inverting-logic).
+For inverting conditional logic, refer to this [latest example](https://github.com/academind/clean-code-course-code/blob/control-06-inverting-logic/04-extract-functions.js#L60-L120).
+vs [old example](https://github.com/academind/clean-code-course-code/blob/control-05-writing-clean-code/03-extract-functions.js)
 
 
 # Utilizing Errors
@@ -52,7 +53,7 @@ For inverting conditional logic, refer to this [example](https://github.com/acad
 
 - **Factory Functions:** Factory functions are functions used to produce objects.
 
-- **Polymorphism:** Polymorphism refers to objects or functions that can always be used in the same way. For more information, refer to [Wikipedia](https://en.wikipedia.org/wiki/Polymorphism_(computer_science)).
+- **Polymorphism:** Polymorphism refers to objects or functions that can always be used in the same way. For more information, refer to [Polymorphism Wikipedia](https://en.wikipedia.org/wiki/Polymorphism_(computer_science)).
 
 - **Example of Utilizing Factory Functions and Polymorphism:**
   - Factory functions and polymorphism can be used to refactor code that violates the DRY (Don't Repeat Yourself) principle. 
