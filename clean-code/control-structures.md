@@ -97,3 +97,8 @@ const TYPE_CREDIT_CARD = 'CREDIT_CARD';
 // ...
 if (transaction.type === TYPE_CREDIT_CARD) { ... }
 ```
+
+
+## Final Product
+This shows the final demo and how to split the work into their own separate directories
+[Final Demo](https://github.com/academind/clean-code-course-code/tree/control-12-finished/final-demo)
