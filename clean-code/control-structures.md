@@ -25,7 +25,9 @@ if (!email.includes('@')) {
 }
 // do stuff
 ```
-The guard fails fast, improving code clarity and efficiency. Look for opportunities to transform code into guards, especially if it contains lots of code and if/else statements.
+
+>[!TIP]
+> The guard fails fast, improving code clarity and efficiency. Look for opportunities to transform code into guards, especially if it contains lots of code and if/else statements.
 
 ## Extracting Control Structures
 
@@ -48,6 +50,7 @@ vs [old example](https://github.com/academind/clean-code-course-code/blob/contro
 - **Utilize Error Guards:** Utilize error guards to handle potential errors and maintain a clear flow of control. [Example](https://github.com/academind/clean-code-course-code/blob/control-07-creating-error-guards/use-errors.js#L70-L79).
 
 - **Error Handling is "One Thing":** Error handling should be treated as a single responsibility within a function, separate from other concerns.
+Check out [Error Handling is "One Thing"](https://github.com/academind/clean-code-course-code/blob/control-09-error-handling-is-one-thing/error-handling-is-one-thing.js#L69-L95)
 
 # Using Factory Functions and Polymorphism
 
@@ -57,6 +60,7 @@ vs [old example](https://github.com/academind/clean-code-course-code/blob/contro
 
 - **Example of Utilizing Factory Functions and Polymorphism:**
   - Factory functions and polymorphism can be used to refactor code that violates the DRY (Don't Repeat Yourself) principle. 
-  - Example: [Error Handling is "One Thing"](https://github.com/academind/clean-code-course-code/blob/control-09-error-handling-is-one-thing/error-handling-is-one-thing.js#L96-L146), [Factory Functions](https://github.com/academind/clean-code-course-code/blob/control-10-factory-functions/factory-functions.js#L105-L121).
+  - Example:, [Factory Functions](https://github.com/academind/clean-code-course-code/blob/control-10-factory-functions/factory-functions.js#L105-L121).
 
-- **Using Default Parameters:** Utilize default parameters to eliminate some conditional statements and ensure parameters always have a value.
+>[!TIP]
+> **Using Default Parameters:** Utilize default parameters to eliminate some conditional statements and ensure parameters always have a value.
