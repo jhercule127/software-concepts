@@ -4,6 +4,23 @@
 
 - **Arrow Code:** Avoid writing code that is overly condensed or "arrow code" as it is not clean and error-prone.
 
+```javascript
+const result = (condition1 && condition2) ? 'trueResult' : (condition3 || condition4) ? 'falseResult1' : 'falseResult2';
+// can instead be 
+
+let result;
+
+if (condition1 && condition2) {
+  result = 'trueResult';
+} else if (condition3 || condition4) {
+  result = 'falseResult1';
+} else {
+  result = 'falseResult2';
+}
+
+
+```
+
 ## Useful Concepts
 
 - **Avoid Deep Nesting:** Refrain from deep nesting in control structures as it can decrease readability and maintainability.
