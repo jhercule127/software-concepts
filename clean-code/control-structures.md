@@ -64,3 +64,19 @@ Check out [Error Handling is "One Thing"](https://github.com/academind/clean-cod
 
 >[!TIP]
 > **Using Default Parameters:** Utilize default parameters to eliminate some conditional statements and ensure parameters always have a value.
+
+[Default Parameters](https://github.com/academind/clean-code-course-code/blob/control-11-default-parameters/more-improvements.js#L62-L66)
+
+
+## Avoid "Magic" Numbers and Strings
+There's one additional tweak you might want to make to the code. Sometimes you have hard-coded string identifiers like "PAYPAL" or "CREDIT_CARD".
+
+You typically want to avoid this - not primarily for readability reasons but to avoid errors (e.g. due to typos).
+
+Hence it is a better practice to use globally defined enums - if your programming language supports that - or globally defined constants.
+
+```javascript
+const TYPE_CREDIT_CARD = 'CREDIT_CARD';
+// ...
+if (transaction.type === TYPE_CREDIT_CARD) { ... }
+```
