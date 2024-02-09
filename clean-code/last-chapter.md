@@ -62,3 +62,49 @@ More information:
 ## Tell, Don’t Ask
 
 Tell your code what to do, not ask.
+
+---
+
+# SOLID Principles
+
+Write classes in a SOLID way. These concepts can help write cleaner code.
+
+## S - Single Responsibility Principle
+
+Classes should have a single responsibility - a class shouldn’t change for more than one reason.
+- Restricting classes to one core responsibility leads to smaller classes, which tend to be easier to read.
+
+## O - Open-Closed Principle
+
+A class should be open for extension but closed for modification.
+- Think Polymorphism.
+- Extensibility ensures small classes (instead of growing classes) and can help prevent code duplication (DRY).
+
+## L - Liskov Substitution Principle
+
+Objects should be replaceable with instances of their subclasses without altering the behavior.
+- Class `Bird` has `fly` method.
+- Class `Hawk` extends `Bird`, has `fly` and `dive` methods.
+- Class `Eagle` extends `Bird`, if need `Eagle` then you can use `fly` alone.
+
+## I - Interface Segregation Principle
+
+Many client-specific interfaces are better than one general-purpose interface.
+- Interface `Database`.
+- Class `SQL` implements `Database`.
+- Class `InMemory` implements `Database`.
+  - But `InMemory` doesn’t need `Database`, it's a general-purpose interface.
+  - Instead, create a new interface `RemoteDatabase`.
+
+## D - Dependency Inversion Principle
+
+“You should depend upon abstractions, not concretions.”
+
+### More on Dependency Inversion Principle (DIP)
+
+Dependency Inversion Principle talks about the coupling between different classes or modules.
+It focuses on the approach where the higher classes are not dependent on the lower classes instead depend upon the abstraction of the lower classes
+
+- High-level classes should not depend on low-level classes. Both should depend on abstractions.
+- Effectively, the DIP reduces coupling between different pieces of code.
+- [More information](https://www.geeksforgeeks.org/dependecy-inversion-principle-solid/#)
