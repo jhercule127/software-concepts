@@ -52,13 +52,28 @@ else
 fi
 ```
 
-5. Taka advantage of `journalctl` and custom fields
+5. Take advantage of `journalctl` and custom fields
 
 ```bash
 # write a custom journal message and query it
 logger -t myscript -- "stage=fetch status=ok file=data.csv"
 journalctl -t myscript --no-pager
 ```
+
+Logger sends messages to the system logging facility, its a simple CLI for writing an entry into the system log with optional tag, priority, and other metadata
+
+
+#### Where to read the logs
+
+systemd Linux: use journalctl
+- By tag: journalctl -t myscript
+- Recent: journalctl -u some-service --since "1 hour ago" (service-specific)
+
+non-systemd Linux (or generic syslog): check /var/log/syslog or /var/log/messages
+- e.g. tail -n 100 /var/log/syslog | grep myscript
+
+macOS: open Console.app or use log:
+- e.g. log show --predicate 'process == "myscript"' --last 1h (predicate formatting may vary)
 
 6. Check statuses of background tasks, just remember to save the PIDs
 
