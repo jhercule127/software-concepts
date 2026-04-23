@@ -6,6 +6,7 @@ The `type *T` is a pointer to a `T` value
 `var p *int`
 
 **The & operator generates a pointer to its operand**
+
 **The * operator denotes the pointer’s underlying value**
 
 ## Structs
@@ -29,8 +30,10 @@ v2 = Vertex{X: 1}  // Y:0 is implicit
 Slices is dynamically sliced, more common than arrays.
 The type `[]T` is a slice with elements of type T
 
-`primes := [6]int{2, 3, 5, 7, 11, 13}`
-`var s []int = primes[1:4]`
+```
+primes := [6]int{2, 3, 5, 7, 11, 13}
+var s []int = primes[1:4]
+```
 
 **IMPORTANT TO REMEMBER: Slices are references to arrays; changing elements of a slice modifies the elements of its underlying array**
 
@@ -111,6 +114,7 @@ func compute(fn func(float64, float64) float64) float64 {
 ```
 
 A closure is a function value that references variables from outside its body. In inner function reeds to match the outer function return
+```
 func fibonacci() func() int {
 	fib_num := 0
 	fib_num2 := 1
@@ -120,9 +124,11 @@ func fibonacci() func() int {
 		return return_value
 	}
 }
+```
 
-
+```
 f := fibonacci()
 for i := 0; i < 10; i++ {
     fmt.Println(f())
 }
+```
