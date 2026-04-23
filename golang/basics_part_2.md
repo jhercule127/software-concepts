@@ -111,24 +111,4 @@ Functions can also be passed around like values
 func compute(fn func(float64, float64) float64) float64 {
 	return fn(3, 4)
 }
-```
 
-A closure is a function value that references variables from outside its body. In inner function reeds to match the outer function return
-```
-func fibonacci() func() int {
-	fib_num := 0
-	fib_num2 := 1
-	return func() int{
-		return_value := fib_num
-		fib_num, fib_num2 = fib_num2, fib_num + fib_num2
-		return return_value
-	}
-}
-```
-
-```
-f := fibonacci()
-for i := 0; i < 10; i++ {
-    fmt.Println(f())
-}
-```
