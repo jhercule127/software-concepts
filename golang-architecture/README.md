@@ -1,11 +1,23 @@
 # Hexagonal Architecture in Go (Ports & Adapters)
 
 A clean, idiomatic Go example of Hexagonal Architecture using an **Order** domain.
-Copy this as a reference or use it as a starter for real projects.
 
 ---
 
 ## What Is Hexagonal Architecture?
+
+This is widely considered the most idiomatic architecture for Go projects. It focuses on isolating the core business logic from external systems (databases, APIs, UI) by defining ports (interfaces) and adapters (implementations)
+
+Before the code: the hexagon has three distinct zones:
+
+| Zone | What lives here | Go Construct |
+| ---- | --------------- | -----------  |
+| Core domain |	Entities, business rules |	Plain struct + methods |
+| Ports | Contracts between zones | interface |
+| Adapters | Implementations of ports | Concrete types (struct) |
+
+The rule: the core never imports adapters — dependency arrows always point inward.
+
 
 The core idea: **your business logic should never know about your infrastructure.**
 
